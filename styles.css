@@ -1,0 +1,261 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+} */
+
+
+ body {
+    font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+p{
+    font-size: small;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b0efb2;
+    padding: -15px -20px;
+    border-bottom: 2px solid #ddd;
+
+}
+p{font-family: "Lato"}
+.home-p3{padding: 0 8rem;}
+.logo img {
+    height: 50px; /* Adjust logo size */
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons .button {
+    background-color: white;
+    color: #4CAF50;
+    padding: 10px 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.auth-buttons .button:hover {
+    background-color: #f1f1f1;
+}
+
+nav {
+    background-color: #1de2a0;
+    justify-content: center;
+margin-top: 3px;
+margin-left: 3px;
+padding: 15px;
+
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.search-container {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 10px 10px;
+    background-color: #4CAF50;
+    color: rgb(227, 223, 223);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+
+.hero {
+    background-image: url('ASSETS/IMAGES/demo.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.hero button:hover {
+    background-color: #218838;
+} 
+
+/* Footer Styling */
+footer {
+    background-color: #222; /* Dark background */
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 2rem 0;
+}
+
+footer h5 {
+    color: #4CAF50; /* Green heading */
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+footer p, footer a {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+footer .input-group {
+    max-width: 400px;
+}
+
+footer .btn-success {
+    background-color: #4CAF50;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer .btn-success:hover {
+    background-color: #388E3C;
+}
+
+footer .bi {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+footer .bi:hover {
+    transform: scale(1.2);
+    color: #4CAF50;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin: 1.5rem 0;
+}
+
+footer .small {
+    font-size: 0.85rem;
+    color: #aaa;
+}

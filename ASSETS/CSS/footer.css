@@ -1,0 +1,84 @@
+footer {  
+    background-color: #343a40;
+    color: white;
+    padding: 2.5px 0; /* Halved from 5px */
+    height: 10%; /* Halved from 75% */
+    text-align: center;
+}
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 2px; /* Original size */
+    font-size: 1rem; /* Original size */
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.875rem; /* Original size */
+}
+footer a:hover {
+    color: #d4edda;
+}
+footer .input-group {
+    display: flex;
+    justify-content: center;
+    max-width: 150px; /* Halved from 300px */
+    margin: 2px auto; /* Original size */
+}
+footer .input-group input {
+    flex: 1;
+    padding: 4px 8px; /* Original size */
+    border-radius: 5px 0 0 5px; /* Original size */
+    border: 1px solid #ced4da; /* Original size */
+}
+footer .input-group button {
+    padding: 4px 12px; /* Original size */
+    border-radius: 0 5px 5px 0; /* Original size */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 0.875rem; /* Original size */
+}
+footer .input-group button:hover {
+    background-color: #218838;
+}
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2px; /* Original size */
+    margin-top: 5px; /* Halved from 10px */
+    font-size: 0.875rem; /* Original size */
+}
+footer p {
+    
+        font-size: 18px; /* Adjust the size as needed */
+        font-weight: bold; /* Optional: Makes text bold */
+        line-height: 1.6; /* Improves readability */
+    }
+    
+     .img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 50%;  /* Makes the logo circular */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
+        object-fit: cover;  /* Ensures image covers the area without distortion */
+        transition: transform 0.3s ease;  /* Smooth transform animation */
+        background-color: white;  /* In case of transparent logos */
+        padding: 8px;  /* Creates some space around the logo */
+    }
+@media (max-width: 768px) {
+    footer .footer-links {
+        flex-direction: column;
+        gap: 8px; /* Original size */
+    }
+    
+    footer .input-group {
+        flex-direction: column;
+    }
+    
+    footer .input-group input,
+    footer .input-group button {
+        border-radius: 5px; /* Original size */
+        margin: 4px 0; /* Original size */
+    }
+}

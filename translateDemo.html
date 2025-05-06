@@ -1,0 +1,260 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Management System - Translation</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        /* Override injected styles from Google Translation */
+        body {
+            top: 0px !important;
+        }
+
+        .ct-topbar {
+            text-align: right;
+        }
+
+        .ct-topbar__list {
+            margin-bottom: 0px;
+        }
+
+        .ct-language__dropdown {
+            padding-top: 8px;
+            max-height: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 110%;
+            left: 3px;
+            -webkit-transition: all 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out;
+            width: 100px;
+            text-align: center;
+            padding-top: 0;
+            z-index: 200;
+        }
+
+        .ct-language__dropdown li {
+            background: #fff;
+            padding: 5px;
+        }
+
+        .ct-language__dropdown li a {
+            display: block;
+        }
+
+        .ct-language__dropdown li:first-child {
+            padding-top: 10px;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .ct-language__dropdown li:last-child {
+            padding-bottom: 10px;
+            border-radius: 0 0 3px 3px;
+        }
+
+        .ct-language__dropdown li:hover {
+            background: #998686;
+        }
+
+        .ct-language__dropdown:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 8px;
+            height: 0;
+            border: 0 solid transparent;
+            border-right-width: 8px;
+            border-left-width: 8px;
+            border-bottom: 8px solid #222;
+        }
+
+        .ct-language {
+            position: relative;
+            color: #fff;
+            padding: 6px 0;
+        }
+
+        .ct-language:hover .ct-language__dropdown {
+            max-height: 200px;
+            padding-top: 8px;
+        }
+
+        .list-unstyled {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .navbar-brand>img {
+            padding-top: 11px;
+            width: 130px;
+            margin-left: 15px;
+        }
+
+        .navbar-brand {
+            height: auto;
+            margin: 0;
+            padding: 0;
+            margin-right: 20px;
+        }
+
+        .navbar {
+            background-color: #000000;
+        }
+
+        .navbar-default .navbar-nav > .active > a {
+            padding: 8px 19px 9px !important;
+        }
+
+        .navbar-nav > li.active {
+            padding: 8px 0px 9px 0;
+        }
+
+        .navbar-right {
+            padding-top: 0;
+        }
+
+        .navbar-default .navbar-nav > li > a::after {
+            background-color: transparent;
+            border-bottom: 3px solid #d2282e;
+        }
+
+        .navbar-default .navbar-nav>li {
+            display: inline-block;
+            text-align: center;
+            float: none;
+        }
+
+        .navbar-default .navbar-nav>li>a {
+            color: #fff;
+        }
+
+        .navbar-default .navbar-nav>li>a:hover {
+            color: #fff;
+            background-color: #0392CC;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to the Agriculture Management System</h2>
+    <p>This page supports multiple languages for better accessibility.</p>
+
+    <!-- Google Translate Element -->
+    <!-- <div id="google_translate_element"></div> -->
+
+    <!-- Script to initialize Google Translate -->
+    <!-- <div class="ct-topbar">
+        <ul class="list-unstyled list-inline ct-topbar__list">
+            <li class="ct-language">Language <b class="caret"></b>
+                <ul class="list-unstyled ct-language__dropdown notranslate">
+                    <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en">ENGLISH</a></li>
+                    <li><a href="#googtrans(en|hi)" class="lang-es lang-select" data-lang="hi">हिंदी</a></li>
+                    <li><a href="#googtrans(en|mr)" class="lang-es lang-select" data-lang="mr">मराठी</a></li>
+                    <li><a href="#googtrans(en|te)" class="lang-es lang-select" data-lang="te">తెలుగు</a></li>
+                    <li><a href="#googtrans(en|ur)" class="lang-es lang-select" data-lang="ur">اردو</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
+            }, 'google_translate_element');
+
+            // Set an interval to hide the Google Translate banner and footer
+            var translateInterval = setInterval(function() {
+                var banner = document.querySelector('.goog-te-banner-frame');
+                var footer = document.querySelector('.goog-te-gadget-simple');
+                
+                if (banner) {
+                    banner.style.display = 'none';
+                }
+                if (footer) {
+                    footer.style.display = 'none';
+                }
+
+                // Stop the interval once elements are hidden
+                if (banner && footer) {
+                    clearInterval(translateInterval);
+                }
+            }, 100);
+        }
+
+        function triggerHtmlEvent(element, eventName) {
+            var event;
+            if (document.createEvent) {
+                event = document.createEvent('HTMLEvents');
+                event.initEvent(eventName, true, true);
+                element.dispatchEvent(event);
+            } else {
+                event = document.createEventObject();
+                event.eventType = eventName;
+                element.fireEvent('on' + event.eventType, event);
+            }
+        }
+
+        jQuery('.lang-select').click(function() {
+            var theLang = jQuery(this).attr('data-lang');
+            jQuery('.goog-te-combo').val(theLang);
+
+            window.location = jQuery(this).attr('href');
+            location.reload();
+        });
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html> --> 
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
+        <title>Translate</title>
+        <style>
+            /* Hide the Google Translate wrapper div */
+.google-translate-wrapper {
+  display: none !important;
+}
+
+/* Hide the Google Translate iframe */
+.goog-te-banner-frame {
+  display: none !important;
+}
+            .translated-ltr{
+                margin-top: -40px;
+            }
+            .translated-ltr{
+                margin-top: -40px;
+            }
+            .goog-te-banner-frame{
+                display: none;
+                margin-top: -20px;
+            }
+            .goog-logo-link{
+                display: none !important;    
+            }
+            .goog-te-gadget{
+                color: transparent !important;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <div id="google_element"></div>
+        <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+        <script>
+            function loadGoogleTranslate(){
+                new google.translate.TranslateElement("google_element")
+            }
+        </script>
+    </body>
+
+</html>

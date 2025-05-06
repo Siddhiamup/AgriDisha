@@ -1,0 +1,56 @@
+  /* Styling for the Google Translate element container */
+  #google_translate_element {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* Custom styling for the select dropdown */
+select.goog-te-combo {
+    background-color: #8a7f39; /* Earthy green-brown color */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for select dropdown */
+select.goog-te-combo:hover {
+    background-color: #6a5c2f; /* Darker brown for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus effect for select dropdown */
+select.goog-te-combo:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(66, 133, 244, 0.6);
+    border-color: #4CAF50; /* Green border for focus */
+}
+.translate-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.translate-section label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.translate-section select {
+    padding: 10px;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #4CAF50;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.translate-section select:hover {
+    border-color: #218838;
+}

@@ -1,0 +1,45 @@
+/* Styling for Contact Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    border-bottom: 2px solid #4CAF50;
+}
+
+h2, h4 {
+    font-weight: bold;
+}
+.container {
+    max-width: 900px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4CAF50;
+}
+
+.bg-light {
+    background-color: #f9f9f9 !important;
+}
+
+#contactForm .form-control:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.btn-success:hover {
+    background-color: #388E3C;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
